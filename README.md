@@ -4,24 +4,26 @@
 This repository contains data related to the coronavirus epidemic in the state of California, and the script ```resulting.py``` to carry out visualizations on some of the data.
 
 ## Installation
-
 First, start by closing the repository:
 ```
 git clone https://github.com/sharmasharad795/california-coronavirus-data.git
 ```
 It is recommended to use a virtualenv for your development
-
-- Create a new conda environment of your choice of name (bokvisuals here is the name of the environment)
+- Install the virualenv
 ```
-conda create --name bokvisuals 
+pip install virtualenv
+```
+- Create the environment of your choice of name (env here is the name of the environment)
+```
+python -m venv env 
 ```
 - Activate the environment
 ```
-conda activate bokvisuals
+source env/bin/activate
 ```
 - Install the dependencies to run the project
 ```
-conda env create --file environment.yml
+pip install -r requirements.txt
 ```
 
 ## Invocation
@@ -33,7 +35,7 @@ bokeh serve --show resulting.py
 ```
 To stop the server , use ```Ctrl + C```
 
-Once the scripts have been run, the conda virutalenv can be closed using the command ```conda deactivate```
+Once the scripts have been run, the ```virutalenv``` can be closed using the command ```deactivate``
 
 
 
