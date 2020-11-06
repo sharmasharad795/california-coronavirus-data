@@ -21,7 +21,7 @@ conda activate bokvisuals
 ```
 - Install the dependencies to run the project
 ```
-conda install --file requirements.txt
+conda env create --file environment.yml
 ```
 
 ## Invocation
