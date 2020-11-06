@@ -38,6 +38,23 @@ To stop the server , use ```Ctrl + C```
 Once the scripts have been run, the ```virutalenv``` can be closed using the command ```deactivate``
 
 
+## Docker
+First , get docker on your local system by downloading from this link : https://docs.docker.com/get-docker/
+
+Inside your cloned repository , perform ```vi Dockerfile``` to create a Dockerfile.
+
+The Dockerfile should be filled as follows:
+
+```
+FROM python:3.7
+WORKDIR /visual
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+ADD resulting.py .
+ADD latimes-state-totals.csv .
+ADD cdph-race-ethnicity.csv .
+CMD ["bokeh","serve","--show", "resulting.py"]
+```
 
 
 
