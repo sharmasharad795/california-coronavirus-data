@@ -39,11 +39,11 @@ Once the scripts have been run, the ```virutalenv``` can be closed using the com
 
 
 ## Docker
-First , get docker on your local system by downloading from this link : https://docs.docker.com/get-docker/
+- First , get docker on your local system by downloading from this link : https://docs.docker.com/get-docker/
 
-Inside your cloned repository , perform ```vi Dockerfile``` to create a Dockerfile.
+- Inside your cloned repository , perform ```vi Dockerfile``` to create a Dockerfile.
 
-The Dockerfile should be filled as follows:
+- The Dockerfile should be filled as follows:
 
 ```
 FROM python:3.7
@@ -55,8 +55,17 @@ ADD latimes-state-totals.csv .
 ADD cdph-race-ethnicity.csv .
 CMD ["bokeh","serve","--show", "resulting.py"]
 ```
+- Create a Docker Image with the help of ```docker build --tag bokehvisual .``` where ```bokehvisual``` is the name of the image
 
+- Display the images, including the recently created one using ```docker images```
 
+- Now, run ```docker run -p 5006:5006 -it bokehvisual``` to see the visualizations.
+
+- Launch ``` http://localhost:5006/resulting``` from your preferred browser.
+
+- Once done, use ```Ctrl + C```
+
+Once the scripts have been run, the ```virutalenv``` can be closed using the command ```deactivate``
 
 
 
