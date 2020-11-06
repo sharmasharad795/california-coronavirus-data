@@ -1,6 +1,6 @@
-# california coronavirus data visualizations
+# California Coronavirus Data Visualizations
 
-## Overview
+### Overview
 
 This repository contains files and script to perfomr visualizations for tbe california coronavirus data.
 
