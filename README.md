@@ -35,9 +35,6 @@ bokeh serve --show resulting.py
 ```
 To stop the server , use ```Ctrl + C```
 
-Once the scripts have been run, the ```virutalenv``` can be closed using the command ```deactivate``
-
-
 ## Docker
 - First , get docker on your local system by downloading from this link : https://docs.docker.com/get-docker/
 
@@ -65,7 +62,7 @@ CMD ["bokeh","serve","--show", "resulting.py"]
 
 - Once done, use ```Ctrl + C```
 
-Once the scripts have been run, the ```virutalenv``` can be closed using the command ```deactivate``
+Once the scripts have been run, the ```virutalenv``` can be closed using the command ```deactivate```
 
 
 
