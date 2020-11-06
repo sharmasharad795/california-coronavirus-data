@@ -21,7 +21,7 @@ conda activate bokvisuals
 ```
 - Install the dependencies to run the project
 ```
-conda install numpy pandas jupyter bokeh
+conda install --file requirements.txt
 ```
 
 ## Invocation
